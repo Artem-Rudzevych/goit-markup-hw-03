@@ -32,7 +32,6 @@ body {
 section,
 div,
 p,
-a,
 img,
 h1,
 h2,
@@ -48,8 +47,13 @@ h3 {
   width: 1200px;
   outline: 2px solid black;
 }
+.container.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* Стилизация Лого */
 .logo {
+  padding-top: ;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -98,6 +102,9 @@ h3 {
   letter-spacing: 0.02em;
   color: var(--contact-footer-text);
   text-decoration: none;
+}
+.footer-li {
+  margin-bottom: 9px;
 }
 .header-contact a:hover,
 .header-contact a:focus {
@@ -159,6 +166,7 @@ h3 {
   border-color: transparent;
   cursor: pointer;
   padding: 6px 22px;
+  outline: 2px solid tomato;
 }
 .button:hover,
 .button:focus {
@@ -241,10 +249,14 @@ h3 {
   color: var(--primary-background-color);
 }
 .address-text {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
+
 /* Стилизация страницы Портфолио */
 .project-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -253,6 +265,7 @@ h3 {
   color: var(--title-color);
 }
 .description {
+  margin: 0;
   font-size: 16px;
   line-height: 1.9;
 
@@ -260,4 +273,16 @@ h3 {
 }
 .filter a {
   text-decoration: none;
+}
+.container.fil {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.port-img {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.container.port {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
