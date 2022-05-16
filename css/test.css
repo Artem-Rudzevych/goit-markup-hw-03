@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  outline: 2px dotted black;
+}
+.btn {
+  width: 250px;
+  outline: 2px dotted black;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.box {
+  width: 500px;
+  height: 100px;
+  background: #000;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
