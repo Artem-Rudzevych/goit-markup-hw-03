@@ -28,11 +28,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+img {
+  display: block;
+  outline: 2px dotted black;
+}
 
 section,
 div,
+a,
+li,
+ul,
 p,
-img,
 h1,
 h2,
 h3 {
@@ -206,6 +212,11 @@ h3 {
   padding-bottom: 94px;
 }
 /* Стилизация team */
+.team {
+  background-color: var(--button-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-img {
   margin-bottom: 30px;
 }
@@ -217,9 +228,8 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-.container.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-section {
+  background: red;
 }
 .team-position {
   margin: 0;
