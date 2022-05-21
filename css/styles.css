@@ -176,7 +176,6 @@ img {
   border-color: transparent;
   cursor: pointer;
   padding: 6px 22px;
-  outline: 2px solid tomato;
 }
 .button:hover,
 .button:focus {
@@ -309,10 +308,30 @@ img {
 
   color: var(--text-color);
 }
+.card-box {
+  width: 370px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+}
+.card-box:nth-child(3n + 2) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.card-box:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
 .filter a {
   text-decoration: none;
 }
+.button-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-style .filter-flex:not(:last-child) {
+  margin-right: 8px;
+}
 .container.fil {
+  padding-left: 280px;
   padding-top: 94px;
   padding-bottom: 50px;
 }
