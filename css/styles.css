@@ -243,19 +243,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.team-box{
+.team-box {
   width: 270px;
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
-  
 }
-/* .team-list.li {
-  background-color: var(--primary-background-color);
-  border-radius: 0px 0px 4px 4px; */
-}
-/* .team-list.li:not(:last-child) {
-  margin-right: 30px; */
-}
+
 .team-img {
   margin-bottom: 30px;
 }
@@ -328,7 +321,7 @@ header {
 }
 .card-box {
   width: 370px;
-  
+  box-sizing: border-box;
 }
 .card-border {
   border: 1px solid var(--border-color);
