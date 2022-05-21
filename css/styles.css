@@ -30,20 +30,8 @@ body {
 }
 img {
   display: block;
-  outline: 2px dotted black;
 }
 
-section,
-div,
-a,
-li,
-ul,
-p,
-h1,
-h2,
-h3 {
-  outline: 2px solid tomato;
-}
 /* Стилизация Шапки */
 .container {
   margin-left: auto;
@@ -51,15 +39,15 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid black;
 }
-.container.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+
+.head-flex {
+  display: flex;
+  align-items: center;
 }
+
 /* Стилизация Лого */
 .logo {
-  padding-top: ;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -79,12 +67,23 @@ h3 {
   list-style: none;
 }
 /* Стилизация меню */
+.header-menu .flex-menu:not(:last-child) {
+  margin-right: 50px;
+}
+.header-menu {
+  margin-left: 93px;
+  margin-right: 331px;
+}
+
 .header-menu .link {
+  display: block;
   color: var(--title-color);
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-menu .link:hover,
 .header-menu .link:focus {
@@ -94,12 +93,17 @@ h3 {
   color: var(--hover-text-color);
 }
 /* Стилизация контактов */
-.header-contact a {
+.header-contact .flex-cont:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact .link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  padding: 32px 0;
 }
 .footer-contact a {
   font-weight: 500;
@@ -152,7 +156,7 @@ h3 {
   font-family: inherit;
   font-weight: 700;
   padding: 10px 32px;
-  outline: 2px solid tomato;
+
   /* margin-bottom: 200px; */
 }
 .hero-button:hover,
@@ -190,6 +194,13 @@ h3 {
   padding-top: 94px;
   padding-bottom: 0;
 }
+.Advantages-flex {
+  display: flex;
+}
+.Advantages-flex .Advantages-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   margin: 0;
 }
@@ -211,11 +222,27 @@ h3 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.about-list {
+  display: flex;
+}
+.about-list .li:not(:last-child) {
+  margin-right: 30px;
+}
 /* Стилизация team */
 .team {
   background-color: var(--button-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+}
+.team-list .li {
+  background-color: var(--primary-background-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list .li:not(:last-child) {
+  margin-right: 30px;
 }
 .team-img {
   margin-bottom: 30px;
@@ -227,15 +254,16 @@ h3 {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  text-align: center;
 }
-.team-section {
-  background: red;
-}
+
 .team-position {
   margin: 0;
   font-size: 16px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  text-align: center;
+  padding-bottom: 30px;
 }
 .about-title,
 .team-title {
