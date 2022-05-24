@@ -190,9 +190,8 @@ header {
   background-color: var(--hover-text-color);
 }
 /* Стилизация Advantages */
-.container.advantages {
+.advantages {
   padding-top: 94px;
-  padding-bottom: 0;
 }
 .Advantages-flex {
   display: flex;
