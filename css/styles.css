@@ -237,7 +237,7 @@ header {
   margin-right: 0;
 }
 /* Стилизация Team */
-.team {
+.team-bg {
   background-color: var(--button-bg-color);
 }
 .team-list {
