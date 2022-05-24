@@ -345,12 +345,10 @@ header {
 .card-flex {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 .list-style .filter-flex:not(:last-child) {
   margin-right: 8px;
-}
-.container.fil {
-  padding-bottom: 50px;
 }
 .port-img {
   margin-top: 0;
