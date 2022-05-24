@@ -222,7 +222,7 @@ header {
   line-height: 1.7;
 }
 /* Секция About */
-.container.about {
+.padding-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -239,8 +239,6 @@ header {
 /* Стилизация Team */
 .team {
   background-color: var(--button-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
@@ -278,8 +276,7 @@ header {
   color: var(--text-color);
   text-align: center;
 }
-.about-title,
-.team-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -323,8 +320,7 @@ header {
 }
 .card-border {
   padding: 20px 24px;
-  /* border: 1px solid var(--border-color);
-  border-top: transparent; */
+  border: 1px solid var(--border-color);
 }
 /* (100% - кол марджинов*значение марджинов) /кол элементов в строке */
 .card-box {
@@ -355,13 +351,8 @@ header {
   margin-right: 8px;
 }
 .container.fil {
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 .port-img {
   margin-top: 0;
-}
-.container.port {
-  padding-top: 0;
-  padding-bottom: 94px;
 }
